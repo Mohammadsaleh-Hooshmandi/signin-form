@@ -23,14 +23,20 @@ html {
     height: 100vh;
 }
 
-.front-wrapper {
+.form-wrapper {
     width: 100rem;
     height: 70rem;
+}
+
+.front-wrapper {
+    width: 100%;
+    height: 100%;
     display: flex;
     background-color: #eee;
     border-radius: 3rem;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .5);
     overflow: hidden;
+    backface-visibility: hidden;
 }
 
 .left-side {
@@ -60,8 +66,7 @@ html {
     text-align: left;
 }
 
-.left-side button {
-    margin-top: 10rem;
+.btn {
     width: 20rem;
     height: 5rem;
     border-radius: 5rem;
@@ -70,6 +75,10 @@ html {
     letter-spacing: .2rem;
     color: #fff;
     font-weight: 800;
+}
+
+.left-side button {
+    margin-top: 10rem;
     background: transparent;
     border: .2rem solid #fff;
 }
@@ -78,4 +87,73 @@ html {
     width: 60%;
     height: 100%;
     text-align: center;
+}
+
+.right-side-header {
+    margin-top: 10rem;
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    color: #3aaf9f;
+}
+
+.icons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.icons i {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    color: #555;
+    border: .2rem solid #777;
+    border-radius: 50%;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: #555;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+.form {
+    margin-top: 3rem;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    margin: 1rem auto;
+    width: 30rem;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: #ddd;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    padding: .5rem .5rem .5rem 5rem;
+}
+
+.input-container i {
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 27%;
+    color: #555;
+}
+
+.right-side button {
+    margin-top: 3rem;
+    background-color: #3aaf9f;
 }
