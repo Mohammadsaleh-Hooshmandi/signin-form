@@ -5,9 +5,77 @@
     border: none;
     outline: none;
     text-decoration: none;
-    font-family: "Quicks sand", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 html {
     font-size: 62.5%;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.front-wrapper {
+    width: 100rem;
+    height: 70rem;
+    display: flex;
+    background-color: #eee;
+    border-radius: 3rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+
+.left-side {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(to right, #3ab19b, #4cbf91);
+    padding: 7rem 1rem;
+}
+
+.left-side-texts {
+    color: #fff;
+    margin-top: 5rem;
+    padding: 4rem 1rem;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+}
+
+.left-side-texts h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.left-side-texts p {
+    margin: 2rem 1rem;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.left-side button {
+    margin-top: 10rem;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: #fff;
+    font-weight: 800;
+    background: transparent;
+    border: .2rem solid #fff;
+}
+
+.right-side {
+    width: 60%;
+    height: 100%;
+    text-align: center;
 }
