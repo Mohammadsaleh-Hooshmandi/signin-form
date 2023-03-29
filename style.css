@@ -21,7 +21,7 @@ html {
 .container {
     width: 100%;
     height: 100vh;
-    perspective: 100rem;
+    perspective: 130rem;
 }
 
 .form-wrapper {
@@ -29,8 +29,12 @@ html {
     height: 70rem;
     transform-style: preserve-3d;
     position: relative;
-    transition: transform 1s;
-    /* transform: rotateY(180deg); */
+    transition: transform 2s;
+
+}
+
+.rotate.form-wrapper {
+    transform: rotateY(180deg);
 }
 
 .front-wrapper, .back-wrapper {
@@ -80,6 +84,7 @@ html {
     letter-spacing: .2rem;
     color: #fff;
     font-weight: 800;
+    cursor: pointer;
 }
 
 .left-side button {
