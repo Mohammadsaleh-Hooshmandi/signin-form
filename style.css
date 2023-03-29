@@ -21,14 +21,19 @@ html {
 .container {
     width: 100%;
     height: 100vh;
+    perspective: 100rem;
 }
 
 .form-wrapper {
     width: 100rem;
     height: 70rem;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform 1s;
+    /* transform: rotateY(180deg); */
 }
 
-.front-wrapper {
+.front-wrapper, .back-wrapper {
     width: 100%;
     height: 100%;
     display: flex;
@@ -116,7 +121,7 @@ html {
     align-items: center;
 }
 
-.right-side p {
+.email-text {
     margin-top: 3rem;
     font-size: 2rem;
     color: #555;
@@ -157,3 +162,19 @@ html {
     margin-top: 3rem;
     background-color: #3aaf9f;
 }
+
+.back-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+.password-text {
+    text-align: right;
+    margin-right: 15rem;
+    font-size: 1.6rem;
+    color: #555;
+    font-weight: 500;
+    text-transform: capitalize;
+} 
